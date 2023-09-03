@@ -6,3 +6,47 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
+
+.navbar {
+  background-color: #0f4c5c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 5rem;
+}
+
+.left h1 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+.checkBtn {
+  display: none;
+}
+#check {
+  display: none;
+}
+.checkBtn {
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  color: #fff;
+  line-height: 80px;
+}
+.right ul {
+  display: flex;
+  list-style: none;
+}
+.right ul li a {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+.right ul li a:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #252422;
+}
