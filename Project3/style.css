@@ -61,6 +61,7 @@ body {
   font-size: 1.4rem;
 }
 .hire-me {
+  width: 8rem;
   margin: 1.5rem auto;
   display: block;
   border: none;
@@ -68,15 +69,11 @@ body {
   border-radius: 2rem;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .hire-me:hover {
-  background: radial-gradient(
-    circle at 100% 107%,
-    #fdf497 0%,
-    #fdf497 5%#fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background-color: #fdf497;
 }
 .social-container {
   display: flex;
