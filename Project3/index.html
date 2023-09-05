@@ -3,10 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>User Profile Card</title>
   </head>
   <body>
+    <div class="card-container">
+      <div class="cart-top-navigation">
+        <li>
+          <i class="fa-solid fa-arrow-left"></i>
+        </li>
+        <ul>
+          <i id="heart" class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-bars"></i>
+        </ul>
+      </div>
+      <div class="user-image">
+        <img src="image/profile.jpg" />
+      </div>
+      <h2 class="user-name">Sheoran</h2>
+      <p class="about-user">
+        My name is Sheoran and I am a full stack developer
+      </p>
+      <button class="hire-me">Hire Me</button>
+
+      <div class="social-container">
+        <div class="social-item">
+          <li class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+          <span class="followers">100k</span>
+          <span class="followers">Followers</span>
+        </div>
+        <div class="social-item">
+          <li class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+          <span class="subcribers">200k</span>
+          <span class="subcribers">Subcribers</span>
+        </div>
+
+        <div class="social-item">
+          <li class="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </li>
+          <span class="followers">100k</span>
+          <span class="followers">Followers</span>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
