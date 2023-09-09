@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f1faee;
+}
+
+.price-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #264653;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem 2rem 5rem;
+  background-color: #ffffff;
+  margin: 0 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  margin-bottom: 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.pricing-item:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.pricing-item li {
+  list-style: none;
+}
