@@ -52,3 +52,8 @@ body {
 .item-heading {
   text-transform: capitalize;
 }
+.item-description {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
