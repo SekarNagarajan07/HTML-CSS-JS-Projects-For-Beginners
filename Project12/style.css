@@ -53,3 +53,24 @@ a {
   justify-content: space-around;
   list-style: none;
 }
+
+.footer-item li {
+  margin-right: 1rem;
+}
+.social ul li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.social ul li:hover {
+  color: #e5e5e5;
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+@media screen and (max-width: 320px) {
+  .footer-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+}
