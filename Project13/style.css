@@ -21,3 +21,95 @@
   overflow: hidden;
   transition: all 0.4s ease;
 }
+.left-menu:hover {
+  width: 13rem;
+}
+
+.left-menu ul li a {
+  display: flex;
+}
+.logo {
+  width: 80px;
+  position: relative;
+  top: 1rem;
+  left: 0.5rem;
+  display: flex;
+  margin: 10px 0 0 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+}
+.logo span {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.logo a {
+  position: relative;
+  left: 180px;
+  color: #284b63;
+  font-size: 18px;
+  display: table;
+  text-align: left;
+  width: 300px;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "Poppins", "sans-serif";
+}
+.left-menu ul {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ul li {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  margin-bottom: 1rem;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+ul li a {
+  padding: 0.5rem;
+  color: #284b63;
+  text-decoration: none;
+}
+ul li a i {
+  text-decoration: none;
+  color: #284b63;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin-right: 1.2rem;
+}
+
+.sidebar-item i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+#settings {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.left-menu ul li:hover {
+  transform: translateX(0.4rem);
+  transition: all 0.4s linear;
+}
+
+.left-menu ul li:hover .fa-solid,
+.left-menu ul li:hover a {
+  font-weight: bold;
+  color: #284b63;
+}
