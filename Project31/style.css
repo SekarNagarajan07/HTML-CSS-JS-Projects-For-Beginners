@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  bottom: 2rem;
+  position: absolute;
+  left: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  transform: translate(-50%, 0);
+  background-color: #3f37c9;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation ul li {
+  height: 35px;
+  width: 35px;
+  margin: 1rem;
+  color: white;
+  padding: 0 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+}
+
+.navigation ul li:hover {
+  color: #3f37c9;
+  transform: scale(1.2);
+  background-color: #fff;
+}
+
+.navigation ul li:hover i {
+  border-radius: 50%;
+}
