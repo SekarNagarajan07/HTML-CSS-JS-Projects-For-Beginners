@@ -2,379 +2,380 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Dongle", sans-serif;
+  scroll-behavior: smooth;
 }
 
-header {
-  height: 300px;
-  position: relative;
-}
-
-header::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
+#navbar {
   width: 100%;
-  height: 100%;
-  background-image: url(./office.jpg);
-  background-position: bottom;
-  background-size: cover;
-  opacity: 0.8;
-  z-index: -1;
-}
-
-header::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.6;
-  background-size: cover;
-  background-color: black;
-  background-position: bottom;
-}
-
-.navbar {
-  color: #fff;
-  padding: 1rem 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-
-.navbar .responsive {
-  display: none;
-}
-
-.navbar ul li {
-  padding: 8px 12px;
-}
-
-.navbar ul li a {
-  z-index: 2;
-  color: #fff;
-  position: relative;
-  text-decoration: none;
-}
-
-#hamBurger {
-  display: none;
-}
-
-.button {
-  padding: 7px 10px;
-  color: #fff;
-  animation: none;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  background-color: rgb(32, 154, 202);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+  text-align: center;
+  background-color: #1e1919;
+  font-size: 1.5rem;
 }
 
 #home {
   width: 100%;
-  padding: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
 }
 
-.home-left {
-  height: 300px;
+.home-left h2 {
+  padding: 7px;
+  border: 2px dotted #3d2514;
+}
+
+.home-left h3 {
   position: relative;
+  bottom: 8px;
+  font-size: 2.2rem;
 }
 
-.home-left img {
-  height: 100%;
-  border-radius: 10px;
-}
-
-.home-right {
-  width: 50%;
-}
-
-.home-heading {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.home-para {
-  margin-bottom: 20px;
-}
-
-.btn {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  position: relative;
-  width: 0;
-}
-
-.btn:hover::after {
-  content: "";
-  height: 4px;
-  position: absolute;
-  background-color: aqua;
-  left: 0;
-  bottom: -10px;
-  animation: width;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  border-radius: 5px;
-}
-
-@keyframes width {
-  0% {
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-#workFlow {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.heading {
-  margin: 1rem auto;
-  text-align: center;
-}
-
-.para {
-  margin: 1rem auto;
-}
-
-.num-container {
-  width: 70%;
-  margin: 1rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.num-item {
-  font-size: 1.5rem;
-  line-height: 1.4rem;
-  color: rgb(43, 126, 199);
-}
-
-/* Our Goal */
-#goal {
-  width: 80%;
-  margin: 2rem auto;
+.divider {
+  margin: 15px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: center;
 }
 
-.goal-left {
-  width: 60%;
-  line-height: 2rem;
-}
-
-.goal-left h2 {
-  font-size: 2.4rem;
-}
-
-.goal-left p {
-  line-height: 1.5rem;
-  margin: 1rem 0;
-}
-
-.goal-left ul {
-  list-style: none;
-  margin-bottom: 1rem;
-}
-
-.goal-left ul li::before {
-  line-height: 1.5rem;
-  content: "✓";
-  color: red;
-}
-
-.goal-right {
-  position: relative;
-  width: 35%;
-}
-
-.goal-right img {
-  width: 100%;
+.burger-home {
+  width: 330px;
+  padding: 20px;
   cursor: pointer;
-  border-radius: 10px;
-  filter: drop-shadow(3px 4px 5px black);
-  transition: all 0.2s linear;
+  transition: 1s all;
 }
 
-.goal-right img:hover {
-  transform: translateY(-5px);
-  filter: drop-shadow(5px 6px 7px black);
+.burger-home:hover {
+  transform: translateY(-15px);
 }
 
-/* Our Team */
-#our-Team {
-  width: 80%;
-  margin: 4rem auto 1rem;
-}
-
-#our-Team h2 {
-  text-align: center;
-  margin: 1rem auto 4rem;
-  position: relative;
-}
-
-#our-Team h2::after {
-  content: "";
-  height: 4px;
-  margin: 0 auto;
-  text-align: center;
-  width: 15%;
-  background-color: aqua;
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  border-radius: 5px;
-  transform: translate(-50%);
-}
-
-.teamContainer {
-  width: 70%;
-  margin: 0 auto;
+.bottom-container {
+  padding: 15px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.team-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 0.5rem;
 }
 
-.team-item h5 {
-  margin-top: 1rem;
-  font-size: 1.1rem;
+.home-bottom-left {
+  background-image: url(Images/burger1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  width: 100%;
+  height: 420px;
+  border-radius: 10px;
+  background-position: center;
 }
 
-.team-item span {
-  margin-top: 0.4rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: rgb(7, 176, 176);
+.home-bottom-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.team-item img {
-  width: 80px;
+.home-bottom-right img {
+  margin: 25px;
+  border-radius: 10px;
+}
+
+.center-div {
+  margin-top: 20px;
+}
+
+.center-div h1,
+p {
+  margin: 15px 0px;
+}
+
+.burger-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.burger-item {
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.burger-item img {
+  width: 240px;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.burger-item img:hover {
+  transform: scale(1.1);
+}
+
+#event-container {
+  margin-top: 20px;
+  width: 100%;
+  padding: 30px 70px;
+}
+
+.event-item {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 13px 23px 4px black;
+  border-radius: 20px;
+}
+
+.event-item img {
+  width: 60%;
+  border-radius: 13px;
+}
+
+.event-content {
+  margin: 0px 20px;
+}
+
+.event-para {
+  padding: 2px -2px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+
+#burger-footer {
+  width: 100%;
+  padding: 25px;
+}
+
+.footer-bg {
+  height: 100%;
+  width: 100%;
+  background-image: url("Images/footerBg.jpg");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.left-footer {
+  margin: 30px;
+}
+
+.right-footer {
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.left-footer .color-white {
+  padding-right: 100px;
+}
+
+.left-footer img {
+  cursor: pointer;
+  width: 300px;
+}
+
+.left-footer p {
+  line-height: 30px;
 }
 
 footer {
-  padding: 1rem 0;
+  background-color: #ffc045;
+  padding: 15px;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.btn-heading {
+  color: black;
+  background-color: #ffc045;
+  padding: 5px 15px;
+  display: block;
+  width: 18%;
+  margin: 0 auto;
+}
+
+.center {
   text-align: center;
 }
 
-@media screen and (max-width: 784px) {
-  #list {
-    display: none;
-  }
-
-  #hamBurger {
-    cursor: pointer;
-    display: block;
-    z-index: 20;
-    font-size: 2rem;
-  }
-
-  .navbar .responsive {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0%;
-    left: 100%;
-    padding: 2rem 0;
-    z-index: 2;
-    height: 100vh;
-    background-color: rgb(24, 23, 24);
-    width: 100%;
-    transition: all 0.5s linear;
-    opacity: 0.9;
-  }
-
-  .navbar ul li {
-    margin: 0.4rem 0;
-  }
-
-  .responsive.active {
-    left: 0%;
-  }
-
-  .goal-right {
-    width: 100%;
-    margin: 0 auto 2rem;
-  }
-
-  .goal-left {
-    width: 100%;
-    text-align: center;
-  }
-
-  #goal {
-    flex-direction: column-reverse;
-  }
+.h-primary {
+  font-size: 5rem;
+  line-height: 111px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 633px) {
-  #home {
+.color-primary {
+  color: #3d2514;
+}
+
+.h-secondary {
+  font-size: 1.4rem;
+}
+
+.normal-hading {
+  font-size: 2rem;
+}
+
+.order-btn {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 7px 18px;
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: #bf2222;
+}
+
+.order-btn:hover {
+  background-color: white;
+  border: 2px solid #bf2222;
+  border-radius: 15px;
+  color: #bf2222;
+}
+
+.burger-item p {
+  font-size: 1.4rem;
+  padding: 0px 50px;
+}
+
+.para-font,
+.p {
+  font-size: 1.5rem;
+}
+
+.center-heading,
+.burger-heading {
+  font-size: 2rem;
+}
+
+.left-footer .color-white {
+  padding: 0px;
+}
+
+.right-footer {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .bottom-container {
     flex-direction: column;
   }
 
-  .home-left {
-    width: 100%;
-    height: auto;
-  }
-
-  .home-left img {
-    width: 100%;
-  }
-
-  .home-right {
-    margin-top: 2rem;
-    width: 100%;
-  }
-
-  .para {
+  .home-bottom-left {
+    height: 420px;
     width: 90%;
   }
 
-  .num-container {
+  .event-item {
     flex-direction: column;
   }
 
-  .num-item {
-    margin: 1rem;
+  .btn-heading {
+    width: 30%;
   }
 
-  .teamContainer {
-    justify-content: center;
+  .event-content .event-para,
+  h2 {
+    text-align: center;
+  }
+
+  .footer-bg {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .burger-container {
+    flex-direction: column;
+  }
+
+  .one {
+    position: relative;
+    border: 2px solid #3d2514;
+    border-radius: 8px;
+    width: 60%;
+    margin: 2px;
+  }
+
+  .one::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -2px;
+    width: 100%;
+    border: 2px solid #3d2514;
+    border-radius: 8px;
+  }
+
+  .one::before {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: -2px;
+    width: 100%;
+    border: 2px solid #3d2514;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .divider {
+    flex-direction: column;
+  }
+
+  .home-bottom {
+    margin-top: 15%;
+  }
+
+  #home::before {
+    height: 90%;
+  }
+
+  .home-bottom-right img {
+    padding: 20px;
+    margin: 0px auto;
+    width: 90%;
+  }
+
+  #event-container {
+    padding: 14px 23px;
+  }
+
+  .event-content {
+    margin: 0px;
+  }
+
+  .burger-home {
+    width: 70%;
+  }
+
+  .h-primary {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .h-secondary {
+    text-align: center;
+  }
+
+  .left-footer .color-white {
+    padding: 2px 25px;
+  }
+
+  .right-footer {
+    font-size: 16px;
   }
 }
